@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom and Bom project</title>
+    <!-- font-awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    
+    
+    <!-- Table Data part start here -->
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <a class="btn btn-primary btn-sm" href="#product_add_modal" data-bs-toggle="modal">Add New Product</a>
+                <br>
+                <br>
+                <div class="card shadow">
+                    <div class="card-header">
+                        <h2>Shop App</h2>
+                    </div>
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr class="text-center">
+                                    <td>S-No</td>
+                                    <td>Name</td>
+                                    <td>Photo</td>
+                                    <td>Price</td>
+                                    <td>Quantity</td>
+                                    <td>Total</td>
+                                    <td>Action</td>
+                                </tr>
+                            </thead>
+                            <tbody id="all_product_list">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Table Data part ends here -->
+
+
+
+
+
+    <!-- Product add Modal part start here -->
+     <div id="product_add_modal" class="modal fade">
+        <div class="modal-dialog dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Add New Product</h2>
+                    <button class="btn btn-close btn-danger" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" id="product_form">
+                        <div class="msg">
+
+                        </div>
+                        <div class="my-3">
+                            <label for="">Name</label>
+                            <input type="text" name="name" class="form-control">
+                        </div>
+                        <div class="my-3">
+                            <label for="">Photo</label>
+                            <input type="text" name="photo" class="form-control">
+                        </div>
+                        <div class="my-3">
+                            <label for="">Price</label>
+                            <input type="text" name="price" class="form-control">
+                        </div>
+                        <div class="my-3">
+                            <label for="">Quantity</label>
+                            <input type="text" name="quantity" class="form-control">
+                        </div>
+                        <img class="loading_img" src="https://lh3.googleusercontent.com/ophqpJaO3Mt0BwuZ7yagkN-lCYKP0H_tdLkQE_lA9hy44MtKkg2vLXzqyWI_UUemrJWqsuZyxqKDlKtcMq4EtMyy=w600" alt="">
+                        <div class="my-3">
+                            <button class="btn btn-sm btn-primary w-100">Add-Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- Product add Modal part ends here -->
+
+
+
+
+    <!-- single Product view modal part start here -->
+    <div id="singleProduct_view" class="modal fade">
+        <div class="modal-dialog dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="btn btn-close btn-danger" data-bs-dismiss="modal"></button>
+                    <div id="single_view" class="single my-3">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- single Product view modal part ends here -->
+
+
+
+    <!-- Updata Modal part start here -->
+    <div id="update_modal" class="modal fade">
+        <div class="modal-dialog dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Update Product</h2>
+                    <button class="btn btn-close btn-danger" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" id="update_form">
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Updata Modal part ends here -->
+
+
+
+
+
+
+    <!-- bootstrap js cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-- function.js link -->
+    <script src="./assets/js/function.js"></script>
+    <!-- custom js link -->
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

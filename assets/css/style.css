@@ -1,0 +1,45 @@
+/* shop app part start here */
+
+i {
+  pointer-events: none;
+}
+
+/* loading_img part start here */
+.loading_img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  display: none;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+/* loading_img part ends here */
+
+
+/* Single Product View part start here. */
+.single{
+  text-align: center;
+  padding: 3px;
+}
+.single img{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 10px solid gray;
+  border-radius: 50%;
+}
+.single p{
+  font-weight: bold;
+}
+/* Single Product View part ends here. */
+
+
+
+
+
+
+/* shop app part ends here */
